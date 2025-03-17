@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكونات الحاسوب الإلكترونية</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>مكونات الحاسوب الإلكترونية</h1>
+        <input type="text" placeholder="ابحث عن مكون..." id="searchInput">
+    </header>
+
+    <div class="components-grid" id="componentsGrid"></div>
+
+    <div class="modal" id="componentModal">
+        <div class="modal-content">
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" class="component-image" src="" alt="">
+            <div class="chart-container">
+                <canvas id="materialChart"></canvas>
+            </div>
+            <div id="usageInfo"></div>
+            <div id="specsInfo"></div>
+            <button onclick="closeModal()" id = 'closeB'>إغلاق</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
